@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İnternet Özgürlüğü Kampanyası</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-white to-slate-50 text-slate-900">
+
+  <!-- Üst Bar -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2 font-semibold">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-slate-900 text-white">TR</span>
+        <span>İnternet Özgürlüğü</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="scrollToId('imza')" class="hidden sm:inline-flex px-4 py-2 bg-slate-900 text-white rounded-lg">İmza/Katıl</button>
+        <button onclick="scrollToId('paylas')" class="px-4 py-2 border rounded-lg">Paylaş</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Türkiye için <span class="bg-yellow-200 px-2 rounded">adil</span>,<br> özgür ve erişilebilir internet.
+        </h1>
+        <p class="mt-5 text-lg text-slate-600">
+          Zorunlu router dayatmasına son, upload hızlarında gerçek iyileştirme ve şeffaf fiyatlar istiyoruz.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button onclick="scrollToId('talepler')" class="px-4 py-2 bg-slate-900 text-white rounded-lg">Taleplerimizi Gör</button>
+          <button onclick="scrollToId('imza')" class="px-4 py-2 bg-slate-200 rounded-lg">Katıl & İmza Ver</button>
+        </div>
+        <div class="mt-4 flex items-center gap-2 text-sm">
+          <span class="px-2 py-1 rounded bg-slate-200">Sivil Girişim</span>
+          <span class="px-2 py-1 rounded border">Partilerüstü</span>
+          <span class="px-2 py-1 rounded border">Topluluk Destekli</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-3">
+        <div class="border rounded-2xl p-4 text-center">
+          <h3 class="font-semibold">Zorunlu Router</h3>
+          <p class="text-xl">Dayatması </p>
+        </div>
+        <div class="border rounded-2xl p-4 text-center">
+          <h3 class="font-semibold">Adil</h3>
+          <p class="text-xl">Olmayan Upload Hızları</p>
+        </div>
+        <div class="border rounded-2xl p-4 text-center">
+          <h3 class="font-semibold">Yüksek</h3>
+          <p class="text-xl"> İnternet Fiyatları</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talepler -->
+  <section id="talepler" class="bg-white border-y">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-3xl font-bold">Üç Temel Talebimiz</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="border rounded-2xl p-4">
+          <h3 class="text-xl font-semibold">Modem/Router Özgürlüğü</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-700 text-sm">
+            <li>Abonelerin kendi cihazını kullanma hakkı.</li>
+            <li> Bağlantı için gerekli tüm bilgiler (giriş ve teknik ayarlar) ücretsiz ve talep edilmeden verilmelidir </li>
+          </ul>
+        </div>
+        <div class="border rounded-2xl p-4">
+          <h3 class="text-xl font-semibold">Adil Upload Hızları</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-700 text-sm">
+            <li>1:2 oranı hedefi</li>
+          </ul>
+        </div>
+        <div class="border rounded-2xl p-4">
+          <h3 class="text-xl font-semibold">Erişilebilir Fiyatlar</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-700 text-sm">
+            <li>Yüksek Hızlarda Erişilebilir Fiyatlar</li>
+            <li>Açık fiyat garantisi</li>
+            <li>Orantılı fesih ücretleri</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Router Dayatması -->
+<section id="router" class="border-y bg-slate-100">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-slate-900">Router Dayatması</h2>
+      <div class="mt-6 text-lg text-slate-700 space-y-5">
+        <p>
+          Size ait olmayacak bir cihaza para ödemek mantıklı mı? 18 aylık taahhüt süresince router için yaklaşık <strong>1.260 TL</strong> ödeyip, sonunda iade etmek yerine kendi cihazınızı kullanın, özgürleşin!
+        </p>
+        <p>
+          Bazı internet sağlayıcıları, modemin "hediye" olduğunu söyler. Gerçekte bu ücreti, daha yüksek olan aylık paket fiyatlarına gizlerler. Yani "ücretsiz" görünen o modem için aslında her ay farkında olmadan ödeme yaparsınız. Sonuç değişmez: Yine size ait olmayan bir cihaz için yüzlerce lira ödemiş olursunuz.
+        </p>
+        <p class="font-semibold text-slate-800">
+          Bu zorunlu router politikası, ülkemizde milyarlarca TL döviz kaybına yol açıyor.
+        </p>
+      </div>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white border rounded-xl p-6 text-center shadow-sm">
+        <h3 class="text-3xl font-bold text-slate-800">8 Milyon+</h3>
+        <p class="mt-2 text-slate-600">Aboneye zorunlu router</p>
+      </div>
+      <div class="bg-white border rounded-xl p-6 text-center shadow-sm">
+        <h3 class="text-3xl font-bold text-slate-800">~50 USD</h3>
+        <p class="mt-2 text-slate-600">Ortalama router maliyeti</p>
+      </div>
+      <div class="bg-white border rounded-xl p-6 text-center shadow-sm">
+        <h3 class="text-3xl font-bold text-slate-800">16+ Milyar TL</h3>
+        <p class="mt-2 text-slate-600">Döviz çıkışı</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Upload Hızları -->
+<section id="upload" style="padding:40px; text-align:center;  background:#f8f9fa;">
+<div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-slate-900">Düşük Upload Hızları</h2>
+      <div class="mt-6 text-lg text-slate-700 space-y-5">
+        <p>
+          Yetersiz yükleme hızları sadece günlük hayatımızı zorlaştırmakla kalmıyor, aynı zamanda ülkemizin dijital ekonomideki rekabet gücünü de zayıflatıyor. Yazılımcılarımız, tasarımcılarımız, içerik üreticilerimiz ve girişimcilerimiz, potansiyellerini tam olarak kullanamıyor. Uzaktan çalışma ve <strong> dijital ihracat </strong> gibi fırsatları kaçırıyoruz.
+        </p>
+        <p>
+          İnternet artık sadece içerik tükettiğimiz (download) tek yönlü bir mecra değil. Görüntülü görüşmelerle toplantı yaptığımız, bulut sistemlere projelerimizi yüklediğimiz, eğitim verdiğimiz ve dünyaya içerik ürettiğimiz (upload) çift yönlü bir yaşam alanı. Ancak Türkiye'deki internet altyapısı, 1:10 (100'e 10) hatta 1:20 (100'e 5) gibi oranlarla hala eski dünyanın alışkanlıklarını dayatıyor. Bu durum, dijital potansiyelimizin önündeki en büyük engeldir.
+        </p>
+        <p class="font-semibold text-slate-800">
+          "Bu gidişata bir son vermek için somut ve gerçekçi bir önerimiz var: Türkiye'de sunulan internet hizmetlerinde, indirme (download) hızının en az yarısı kadar yükleme (upload) hızı sunulması yasal bir asgari standart haline getirilmelidir.
+        </p>
+      </div>
+    </div>
+
+</section>
+
+<!-- Adil Fiyat -->
+<section id="router" class="border-y bg-slate-100">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-slate-900">Adil Fiyat</h2>
+      <div class="mt-6 text-lg text-slate-700 space-y-5">
+        <p>
+          Dünya yapay zeka ve gigabit hızlarla geleceği şekillendirirken, ülkemizde milyonlarca insan hala 10-15 yıl öncesinin teknolojisi sayılan 16 Mbps hızındaki internet için aylık 700 TL gibi fahiş ücretler ödüyor. Bu, sadece yavaş bir internete sahip olmak değil, aynı zamanda dijital çağda temel bir hak olan bilgiye erişimin ekonomik bir engele dönüşmesidir.
+        </p>
+        <p>
+         Net asgari ücretin 22.104,67 TL olduğu ülkemizde, 700 TL'lik bir internet faturası bu ücretin neredeyse 32'de 1'ine denk geliyor.
+
+Başka bir deyişle:
+
+Asgari ücretli bir vatandaşımız, emeğinin önemli bir kısmını sadece temel bir dijital ihtiyacı karşılamak için harcamak zorunda kalıyor.
+
+Bu parayla bir ailenin bir haftalık temel mutfak masrafı veya bir elektrik/su faturası rahatlıkla ödenebilir.
+
+Vatandaş, temel geçim masrafları ile dijital dünyaya erişim arasında acı bir seçim yapmak zorunda bırakılıyor.
+        </p>
+      </div>
+    </div>
+</section>
+
+  <!-- İmza -->
+  <section id="imza" class="bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-3xl font-bold">Katıl & İmza Ver</h2>
+      <p class="text-slate-600 mt-2">Hazır e-posta metnini kopyalayabilir ya da imza kampanyasına katılabilirsiniz.</p>
+      <textarea id="emailBody" class="w-full mt-4 p-3 border rounded-lg min-h-[150px]">
+Sayın Yetkili,
+
+Türkiye'de internet hizmetlerinde taleplerim:
+- Modem/Router özgürlüğü
+- Daha yüksek upload hızları
+- Şeffaf fiyatlandırma
+
+Gereğini arz ederim.
+Ad Soyad:
+Şehir:
+      </textarea>
+      <div class="mt-3 flex gap-2">
+        <button onclick="copyEmail()" class="px-4 py-2 bg-slate-900 text-white rounded-lg">E-posta Metnini Kopyala</button>
+        <span id="copiedMsg" class="text-green-600 hidden">Kopyalandı!</span>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Paylaş -->
+  <section id="paylas" class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-3xl font-bold">Paylaş</h2>
+      <p class="mt-2 text-slate-600">Sosyal medyada duyur.</p>
+      <div class="mt-4 flex gap-3 flex-wrap">
+        <a href="https://twitter.com/intent/tweet?text=Türkiye'de+adil+internet+istiyoruz" target="_blank" class="px-4 py-2 bg-slate-200 rounded-lg">Twitter</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.org" target="_blank" class="px-4 py-2 bg-slate-200 rounded-lg">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-600 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+      <p>© 2025 İnternet Özgürlüğü Girişimi • Açık Kaynak</p>
+      <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="underline">Başa dön</a>
+    </div>
+  </footer>
+
+<script>
+  function scrollToId(id){
+    document.getElementById(id).scrollIntoView({behavior:'smooth'});
+  }
+  function copyEmail(){
+    const text = document.getElementById('emailBody').value;
+    navigator.clipboard.writeText(text);
+    const msg = document.getElementById('copiedMsg');
+    msg.classList.remove('hidden');
+    setTimeout(()=>msg.classList.add('hidden'),2000);
+  }
+</script>
+</body>
+</html>
